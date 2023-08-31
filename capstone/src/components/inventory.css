@@ -1,0 +1,88 @@
+#Inventory {
+    font-size: 30px;
+}
+
+.custom-border {
+    border-top: 8px solid #1fa636; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+
+#purchases {
+    font-size: 30px;
+}
+
+.table-top{
+  border-top: 10px solid #1fa636; 
+  padding: 5%;
+  padding-bottom: 10%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px; 
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  border-top: 15px solid #1fa636; 
+  border-radius: 100px;
+  font-family: sans-serif;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: auto;
+  width: 80%;
+  padding: 5%;
+
+
+}
+
+.tr{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.pagination-container .page-link {
+  color: #fff;  /* White text */
+  background-color: #1fa636;  /* Green background */
+  border-color: #1fa636;  /* Green border */
+}
+
+/* For active state */
+.pagination-container .page-item.active .page-link {
+  background-color: #188c32;  /* Darker green */
+  border-color: #188c32;  /* Darker green border */
+}
+
+/* For hover state */
+.pagination-container .page-item .page-link:hover {
+  background-color: #188c32;  /* Darker green */
+  border-color: #188c32;  /* Darker green border */
+}
+
+/* For focus state */
+.pagination-container .page-item .page-link:focus {
+  box-shadow: none;  /* Removes default blue outline */
+  outline: none;  /* Removes default blue outline */
+  border-color: #188c32;  /* Darker green border */
+}
+
+.form{
+  border-top: 25px solid #1fa636; 
+  border-radius: 100px;
+  font-family: sans-serif;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  padding: 5%;
+  box-shadow: #188c32;
+}
+

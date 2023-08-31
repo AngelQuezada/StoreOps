@@ -1,0 +1,45 @@
+{
+    "UNFI": [
+      {
+        "ID": "UNFI001",
+        "NAME": "Almond Milk",
+        "quantity": 10,
+        "unitPrice": 7.11
+      },
+      {
+        "ID": "UNFI002",
+        "NAME": "Yogurt",
+        "quantity": 5000,
+        "unitPrice": 4.82
+      }
+    ],
+    "TONY": [
+      {
+        "ID": "TONY001",
+        "NAME": "Onions",
+        "quantity": 706,
+        "unitPrice": 3.61
+      },
+      {
+        "ID": "TONY002",
+        "NAME": "Organic Apples",
+        "quantity": 707,
+        "unitPrice": 2.86
+      }
+    ],
+    "WAREHOUSE": [
+      {
+        "ID": "WARE001",
+        "NAME": "Rice",
+        "quantity": 28,
+        "unitPrice": 6.13
+      },
+      {
+        "ID": "WARE002",
+        "NAME": "Olive Oil",
+        "quantity": 62,
+        "unitPrice": 6.6
+      }
+    ]
+  }
+  

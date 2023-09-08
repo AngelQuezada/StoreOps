@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Vendor = require('../models/vendor'); // Make sure to import the Vendor class
-const db = require('../config/db'); // Import the db instance
+const Vendor = require('../models/vendor'); 
+const db = require('../config/db'); 
 
 router.get('/', async (req, res, next) => {
   try {
@@ -11,6 +11,25 @@ router.get('/', async (req, res, next) => {
     next(err);
   }
 });
+
+router.put('/:id/update-inventory', async (req, res, next) => {
+  const vendorId = req.params.id;
+  const updatedInventory = req.body;
+
+  try {
+    if (Array.isArray(updatedInventory)) {
+      await Vendor.updateInventory(vendorId, updatedInventory);
+      res.status(200).json({ message: 'Inventory updated' });
+    } else {
+      console.error("updatedInventory is not an array");
+      res.status(400).json({ message: 'Bad Request' });
+    }
+  } catch (err) {
+    next(err);
+  }
+});
+
+
 
 router.get('/:id/inventory', async (req, res, next) => {
   try {

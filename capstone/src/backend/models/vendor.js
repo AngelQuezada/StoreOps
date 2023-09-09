@@ -33,7 +33,7 @@ class Vendor {
   }
   
   static async updateInventory(vendorId, updatedInventory) {
-    console.log(typeof updatedInventory, updatedInventory);  // Debugging line
+    console.log(typeof updatedInventory, updatedInventory); 
     await Promise.all(
       updatedInventory.map(async (item) => {
         const query = `

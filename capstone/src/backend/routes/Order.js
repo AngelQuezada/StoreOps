@@ -1,17 +1,4 @@
-// const express = require('express');
-// const router = express.Router();
-// const Order = require('../models/Order'); 
 
-// router.get('/suggestions', async (req, res, next) => {
-//   try {
-//     const suggestions = await Order.generateOrderSuggestions();
-//     res.json({ suggestions });
-//   } catch (err) {
-//     next(err);
-//   }
-// });
-
-// module.exports = router;
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/Order'); 

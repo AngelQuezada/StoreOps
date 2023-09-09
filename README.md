@@ -35,4 +35,9 @@ Say goodbye to uncertainty and surprises. Our Inventory Tracker offers real-time
    - Buyers receive order confirmations from vendors.
 
 7. **Monitor Inventory**:
+<<<<<<< HEAD
    - Buyers track inventory changes to ensure accuracy.
+=======
+   - Buyers track inventory changes to ensure accuracy.
+
+>>>>>>> 104c50ceba806984a9615c3ab98d1869fa9a2980

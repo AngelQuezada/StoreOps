@@ -36,6 +36,3 @@ Say goodbye to uncertainty and surprises. Our Inventory Tracker offers real-time
 
 7. **Monitor Inventory**:
    - Buyers track inventory changes to ensure accuracy.
-
-   - Buyers track inventory changes to ensure accuracy.
-

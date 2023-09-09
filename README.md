@@ -14,10 +14,26 @@ One of the standout features of our Inventory Tracker is its ability to provide 
 
 Say goodbye to uncertainty and surprises. Our Inventory Tracker offers real-time visibility into your inventory levels. You'll have an accurate view of what's currently in stock, what's on its way, and which products are in high demand. This data empowers you to make informed decisions promptly, reducing the risk of overstocking or running out of essential items.
 
+## User Flow: Buyer's Weekly Inventory Management
 
+1. **Receive Weekly Report**:
+   - Buyers receive a weekly report showing current inventory status.
 
-How do users load Data? Description of the Tables. 
-Attached Data!
+2. **Check Inventory Accuracy**:
+   - Buyers review the report for any inventory discrepancies.
 
-Upload User Flow!
+3. **Access Suggested Orders**:
+   - Buyers access suggested order quantities based on vendor deliveries and demand history.
+
+4. **Adjust Orders**:
+   - Buyers can make adjustments to suggested order quantities if needed.
+
+5. **Place Orders**:
+   - Buyers place orders with vendors based on their adjustments.
+
+6. **Receive Confirmations**:
+   - Buyers receive order confirmations from vendors.
+
+7. **Monitor Inventory**:
+   - Buyers track inventory changes to ensure accuracy.
 

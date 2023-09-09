@@ -1,77 +1,4 @@
-// const db = require('../config/db');
 
-// class Order {
-//   static async getSalesDataForLastWeek() {
-//     const query = `
-//     SELECT ProductID as "productid", SUM(CAST(QuantitySold AS FLOAT)) as "totalsold"
-//     FROM sales
-//     WHERE DateSold BETWEEN date_trunc('week', current_date - interval '1 week') AND (date_trunc('week', current_date) - interval '1 day') 
-//     GROUP BY ProductID;
-    
-//     `;
-//     const result = await db.query(query);
-//     return result.rows;
-//   }
-
-//   static async getCurrentInventory() {
-//     const query = `
-//       SELECT ProductID, Quantity 
-//       FROM inventory;
-//     `;
-//     const result = await db.query(query);
-//     return result.rows;
-//   }
-
-//   static async generateOrderSuggestions(vendorId) {
-//     try {
-//       const salesData = await this.getSalesDataForLastWeek();
-//       const inventoryData = await this.getCurrentInventory();
-  
-//       console.log("Raw Sales Data:......", salesData);
-//       console.log("Raw Inventory Data:", inventoryData);
-  
-//       const suggestions = [];
-//       const inventoryDict = {};
-    
-//       // Populate the inventory dictionary
-//       inventoryData.forEach(item => {
-//         inventoryDict[item.productid] = item.quantity;  // Notice the case
-//       });
-  
-//       console.log("Inventory Dictionary:", inventoryDict);
-    
-//       // Loop through each sale data
-//       salesData.forEach(sale => {
-//         const productID = sale.productid;  // Corrected to match SQL alias
-//         const totalSold = sale.totalsold;  // Corrected to match SQL alias
-  
-//         console.log(`Processing ProductID: ${productID}, TotalSold: ${totalSold}`);
-    
-//         if (inventoryDict[productID] !== undefined) {
-//           const currentInventory = inventoryDict[productID];
-//           console.log(`Current Inventory for ProductID ${productID}: ${currentInventory}`);
-          
-//           if (currentInventory < totalSold) {
-//             const suggestedOrderQuantity = totalSold - currentInventory;
-//             suggestions.push({
-//               ProductID: productID,
-//               SuggestedOrder: suggestedOrderQuantity
-//             });
-//             console.log(`Suggestion Added: ${JSON.stringify(suggestions)}`);
-//           }
-//         }
-//       });
-    
-//       console.log("Final Suggestions:", suggestions);
-//       return suggestions;
-//     } catch (error) {
-//       console.error("Error in generateOrderSuggestions:", error);
-//       throw error;
-//     }
-//   }
-// }
-
-// module.exports = Order;
 
 const db = require('../config/db');
 
@@ -102,18 +29,6 @@ class Order {
     console.log("Raw Inventory Data:", result.rows);
     return result.rows;
   }
-
-//   static async getProductUnitPrices(vendorId) {
-//     const query = "SELECT ProductID, UnitPrice FROM products WHERE VendorID = $1;";
-//     const result = await db.query(query, [vendorId]);
-//     const unitPriceMap = {};
-//     result.rows.forEach(row => {
-//       unitPriceMap[row.ProductID] = row.UnitPrice;
-//     });
-//     return unitPriceMap;
-// }
-
-  
 
   static async generateOrderSuggestions(vendorId) {
     try {

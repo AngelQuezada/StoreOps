@@ -14,12 +14,7 @@ const TotalPurchases = () => {
         
         <Card
                 className="my-2 custom-border" 
-                // color="success"
-                // outline
-                // style={{
-                //     width: '18rem',
-                //     borderRadius: '15px', 
-                // }}
+
         >
           <CardHeader style={{fontSize: '20px' }}>
           {currentMonth}'s Purchases

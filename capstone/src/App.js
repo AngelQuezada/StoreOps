@@ -6,7 +6,7 @@ import MiniDrawer from './components/shared/navBar.jsx';
 import Home from './components/Home/home';
 import ContactForm from './components/purchaseToSale/generateInventory';
 import VendorInventory from './components/purchaseToSale/VendorInventory'
-
+import OrderByVendor from './components/Ordering/OrderByVendor'
 function App() {
   return (
     <Router>
@@ -20,9 +20,13 @@ function App() {
             <Route path="inventory" element={<ContactForm/>}/>
           </Routes>
           <Routes>
-          <Route path="/vendor-inventory/:vendor" element={<VendorInventory/>} />
-
+          <Route path="/api/vendors/:vendorID/inventory" element={<VendorInventory/>} />
           </Routes>
+          <Routes>
+          <Route path="purchase-to-sale" element={<OrderByVendor/>} />
+          </Routes>
+          
+
         </div>
       </div>
     </Router>

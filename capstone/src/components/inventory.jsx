@@ -9,11 +9,10 @@ const Inventory = () => {
       <div id='Inventory'>
         <Card
           className="my-2 custom-border" 
-          // color="success"
-          // outline
+
           style={{
             width: '18rem',
-            // borderRadius: '15px', // Adjust this value for the desired border radius
+            
           }}
         >
           <CardHeader style={{  fontSize: '20px' }}>

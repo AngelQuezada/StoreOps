@@ -4,7 +4,7 @@ import TotalPurchases from './Purchases';
 
 const Dashboard = () => {
   return (
-    <Container fluid> {/* Use 'fluid' to allow the container to span the full width */}
+    <Container fluid>
       <Row className="justify-content-end">
 
         <Col sm={3}>

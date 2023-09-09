@@ -4,13 +4,12 @@ import purchaseData from '../../SupportingData/purchases.json';
 import '../inventory.css'
 
 const PurchaseTable = () => {
-    // Sort the purchases by date
     const sortedPurchases = purchaseData.purchases.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
 
     const [currentPage, setCurrentPage] = useState(0);
-    const pageSize = 10; // Set the number of items per page here
+    const pageSize = 10;
 
     const handleClick = (e, index) => {
       e.preventDefault();

@@ -8,8 +8,8 @@ const FormInput = ({
 	inputName,
 	placeholderText,
 	ariaLabelName,
-  onChange,  // Added this line to handle onChange from parent
-  options // Added this line to handle options from parent
+  onChange, 
+  options 
 }) => {
 	return (
 		<div className="font-general-regular mb-4">
@@ -27,14 +27,14 @@ const FormInput = ({
 				placeholder={placeholderText}
 				aria-label={ariaLabelName}
 				required
-				onChange={onChange} // Added this line to use onChange from parent
+				onChange={onChange} 
 				style={{
-					width: '80%',  // This sets the width to 50% of its container
-					height: '40px',  // This sets the height to 30 pixels
+					width: '80%',  
+					height: '40px',  
 					marginTop: "10px"
 				}}
 			/>
-      {/* Add this block if you want to use options from parent */}
+
       {options && options.length > 0 && 
         <datalist id="vendors">
           {options.map((option, index) => (
